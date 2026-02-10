@@ -289,3 +289,73 @@ for (let stop = 1; stop <= 100; stop++) {
     console.log(stop)
 }
 
+
+//  E. Arrays (28–36)
+
+
+// 28. Create an array and print all the elements
+let array = [1, "Munna", 45, true]
+console.log("All the elements of array:- " + array)
+
+
+// 29. Find the length of the array
+let arrayLen = ["Munna", 384, true, "56", 344.3]
+console.log("Array length:- " + arrayLen.length)
+
+
+// 30. Find the first and last element from the array
+let arrayFL = [1, 3, 5, "Munna", 34, 2.34, false, NaN]
+console.log("First element of array:- " + arrayFL[0])
+console.log("Last element of array:- " + arrayFL[arrayFL.length - 1])
+
+
+// 31. Find the sum of all the numbers in the array
+let numArray = [1, 3, 5, 6, 7, 5, 5, 3]
+let sumArray = 0
+for (let NA of numArray) {
+    sumArray += NA
+}
+console.log("The sum of array:- " + sumArray)
+
+
+// 32. Find the even numbers from the array
+let evenArray = [1, 2, 5, 6, 7, 4, 5, 3]
+console.log("Even from the array:- ")
+for (let ev of evenArray) {
+    if (ev % 2 == 0) {
+        console.log(ev)
+    }
+}
+
+
+// 33. Find the largest number in the array
+let digArray = [1, 9, 3, 4, 5, 7, 10]
+let dig = digArray[0]
+for (let array of digArray) {
+    if (dig < array) {
+        dig = array
+    }
+}
+console.log("The largest Number in the array:- " + dig)
+
+
+// 34. Reverse the array
+let ogArray = [1, 9, 3, 4, 5, 7]
+console.log("Reversr the array:- ")
+let revArray = []
+for (let rev of ogArray) {
+    revArray.unshift(rev)
+}
+console.log(revArray)
+
+
+// 35. Sort the array (numeric)
+let SortArray = [1, 9, 3, 4, 5, 7]
+let sort = SortArray.sort()
+console.log("Sort the array :- " + sort)
+
+
+// 36. Remove duplicates from the array
+let dupArray = [1, 2, 5, 6, 7, 4, 5]
+let filter = [...new Set(dupArray)]
+console.log("Remove the duplicates valu:- " + filter)
