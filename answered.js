@@ -124,3 +124,99 @@ console.log("Number to String convert:- " + typeof consrt + " Valu:- " + consrt)
 // 13. Give an example of how NaN is created
 let an = 0
 console.log("NaN example:-  " + an / 0)
+
+// C. Conditionals (14–20)
+
+// 14. Check whether a person can vote by age
+let age = 18;
+if (age >= 18) {
+    console.log("You can vote now.")
+}
+else {
+    console.log("You can't give vote.")
+}
+
+
+// 15. Check whether a number is greater than or less than 100
+let Gnumber = 100;
+if (Gnumber > 100) {
+    console.log("the Number is greater than 100 :- " + Gnumber)
+}
+else if (Gnumber == 100) {
+    console.log("the Number is equal than 100 :- " + Gnumber)
+}
+else {
+    console.log("the Number is less then 100 :- " + Gnumber)
+}
+
+
+// 16. Calculate the grade from the student's mark
+let mark = 39;
+if (mark <= 100 && mark > 90) {
+    console.log("You got A+")
+}
+else if (mark >= 80 && mark <= 90) {
+    console.log("You got A")
+}
+else if (mark >= 70 && mark <= 79) {
+    console.log("You got A-")
+}
+else if (mark >= 60 && mark <= 69) {
+    console.log("You got B")
+}
+else if (mark >= 50 && mark <= 59) {
+    console.log("You got C")
+}
+else if (mark >= 40 && mark <= 49) {
+    console.log("You got D")
+}
+else {
+    console.log("You are fail")
+}
+
+
+// 17. Write a program to check leap year
+let year = 2026;
+if (year % 4 === 0 && year % 100 !== 0) {
+    console.log("This is a leap Year :- " + year)
+}
+else if (year % 400 === 0) {
+    console.log("This is a leap year :- " + year)
+}
+else {
+    console.log("This is Not a leap year :- " + year)
+}
+
+
+// 18. Calculate the largest of three numbers
+let lag1 = 3;
+let lag2 = 4;
+let lag3 = 6;
+if (lag1 > lag2 && lag1 > lag3) {
+    console.log("First Number is big :- " + lag1)
+}
+else if (lag2 > lag1 && lag2 > lag3) {
+    console.log("second Number is big :- " + lag2)
+}
+else {
+    console.log("third Number is big :- " + lag3)
+}
+
+
+// 19. Create a login system (check email && password)
+let email = "munna@gmail.com"
+let password = "SheenMOta3695"
+let inEmail = "Munn@gmail.com"
+let inPassword = "SheenMOta3695"
+if (email.toLocaleLowerCase() === inEmail.toLocaleLowerCase() && password === inPassword) {
+    console.log("Welcome! Login successful")
+}
+else {
+    console.log("Login failed. Invalid email or password")
+}
+
+
+// 20. Check even/odd using ternary operator
+let n = 4;
+n % 2 == 0 ? console.log("this is a even Number:- " + n) : console.log("this is a odd Number:- " + n)
+
