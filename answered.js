@@ -77,3 +77,50 @@ else if (number % 5 === 0) {
 else {
     console.log("this number is not divisible by 3 and 5 :- " + number)
 }
+
+
+// B.Variable & Data Type(9–13)
+
+
+// 9. Declaring the same variable with let, const, var and using different methods
+// var use:-
+var x = 2;
+console.log("Using var:- " + x)
+var x = 4;
+console.log("Using var:- " + x)
+// let use:-
+let y = 4;
+console.log("Using let:- " + y)
+// let y = 2;
+// console.log("Using let:- " + y)
+// const use:-
+const z = 1;
+console.log("Using const:- " + z)
+// const z = 3;
+// console.log("Using const:- " + z)
+
+
+// 10. Checking the type of a variable (typef)
+let int = 45;
+console.log("Type of Number:- " + typeof int)
+let str = "munna"
+console.log("Type of string:- " + typeof str)
+let single = true
+console.log("Type of boolean:- " + typeof single)
+
+
+// 11. Converting a string to a number
+let conSrt = "10";
+let conNum = parseInt(conSrt)
+console.log("String to Number convert:- " + typeof conNum + " Valu:- " + conNum)
+
+
+// 12. Converting a number to a string
+let connum = 10;
+let consrt = String(connum)
+console.log("Number to String convert:- " + typeof consrt + " Valu:- " + consrt)
+
+
+// 13. Give an example of how NaN is created
+let an = 0
+console.log("NaN example:-  " + an / 0)
