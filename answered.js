@@ -125,7 +125,9 @@ console.log("Number to String convert:- " + typeof consrt + " Valu:- " + consrt)
 let an = 0
 console.log("NaN example:-  " + an / 0)
 
+
 // C. Conditionals (14–20)
+
 
 // 14. Check whether a person can vote by age
 let age = 18;
@@ -219,4 +221,71 @@ else {
 // 20. Check even/odd using ternary operator
 let n = 4;
 n % 2 == 0 ? console.log("this is a even Number:- " + n) : console.log("this is a odd Number:- " + n)
+
+
+// D.Loops(21–27)
+
+
+// 21. Print numbers from 1 to 10
+console.log("1 to 10 Number print:- ")
+for (let a = 1; a <= 10; a++) {
+    console.log(a)
+}
+
+
+// 22. Print even numbers from 1 to 50
+
+let va = 1;
+console.log("1 to 50 all even Number print:- ")
+while (va <= 50) {
+    if (va % 2 == 0) {
+        console.log(va)
+    }
+    va++
+}
+
+
+// 23. Run a reverse loop from 10 to 1
+console.log("10 to 1 reverse Number print:- ")
+for (let r = 10; r > 0; r--) {
+    console.log(r)
+}
+
+
+// 24. Print the denominator of a number
+let deno = 9;
+console.log(deno + "denominator is:- ")
+for (let num = 1; num <= 10; num++) {
+    let denoNum = deno
+    let Num = num
+    let str = denoNum + " into " + Num
+    console.log(str + " = " + deno * num)
+}
+
+
+// 25. Find the number divisible by 3 between 1–100
+console.log("1 to 100 number which divided by 3")
+for (let div = 1; div <= 100; div++) {
+    if (div % 3 === 0) {
+        console.log(div)
+    }
+}
+
+
+// 26. Find the sum using a loop
+let sumloop = 0;
+for (let loop = 1; loop <= 10; loop++) {
+    sumloop += loop
+}
+console.log("The sum of :- " + sumloop)
+
+
+// 27. Stop the loop using break
+console.log("using break")
+for (let stop = 1; stop <= 100; stop++) {
+    if (stop === 5) {
+        break
+    }
+    console.log(stop)
+}
 
