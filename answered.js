@@ -402,3 +402,39 @@ if (strPal === Palrev) {
 else {
     console.log("This is not a palindrome word :- " + strPal + " = " + Palrev)
 }
+
+
+// G. Objects (43–47)
+
+
+// 43. Create an object with student info
+let studentInfo = {
+    name: "Munna",
+    Roll: 62,
+    class: "6 semester",
+    Number: 1751626072,
+}
+// 44. Print all keys from object
+let studentKey = {
+    name: "Munna",
+    Roll: 62,
+    class: "6 semester",
+    Number: 1751626072,
+}
+console.log(Object.keys(studentKey))
+// 45. Print all values ​​of object
+let studentObj = {
+    name: "Munna",
+    Roll: 62,
+    class: "6 semester",
+    Number: 1751626072,
+}
+console.log(Object.values(studentObj))
+// 46. Check if object has a specific property
+let studentSpf = {
+    name: "Munna",
+    Roll: 62,
+    class: "6 semester",
+    Number: 1751626072,
+}
+console.log(studentSpf.hasOwnProperty("Number"))
