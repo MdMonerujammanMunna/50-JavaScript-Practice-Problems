@@ -359,3 +359,46 @@ console.log("Sort the array :- " + sort)
 let dupArray = [1, 2, 5, 6, 7, 4, 5]
 let filter = [...new Set(dupArray)]
 console.log("Remove the duplicates valu:- " + filter)
+
+
+// F.Strings(37–42)
+
+
+// 37. Find the length of a string
+let strLen = "My name is Munna"
+console.log("The length of string is:- " + strLen.length)
+
+
+// 38. Make a string uppercase
+let upcase = "i love bangladesh.i am a student"
+console.log("string uppercase is:- " + upcase.toUpperCase())
+
+
+// 39. Check if a string contains a specific word
+let strspc = "I want to become a web design and devlope. I need Money."
+console.log("The specific word is there:- " + strspc.includes("a"))
+
+
+// 40. Extract all words from a sentence
+let strext = "munna"
+console.log("Extract all words is:- " + strext.split(""))
+
+
+// 41. Reverse a string
+let strOg = "Hello!"
+let strsplit = strOg.split("");
+let strRev = strsplit.reverse();
+let joinRev = strRev.join("");
+console.log(strOg + ". Reverse String is:- " + joinRev)
+
+
+// 42. Check if a string is a palindrome
+
+let strPal = "racecar";
+let Palrev = strPal.split("").reverse().join("");
+if (strPal === Palrev) {
+    console.log("This is a palindrome word :- " + strPal)
+}
+else {
+    console.log("This is not a palindrome word :- " + strPal + " = " + Palrev)
+}
