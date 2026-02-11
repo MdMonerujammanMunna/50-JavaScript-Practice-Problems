@@ -438,3 +438,118 @@ let studentSpf = {
     Number: 1751626072,
 }
 console.log(studentSpf.hasOwnProperty("Number"))
+
+
+// H.Functions(48–55)
+
+
+// 48. Write a function to find the sum of two numbers
+function FunSum(a, b) {
+    return a + b
+}
+let SumFun = FunSum(2, 4);
+console.log("Sum of two Number:- " + SumFun)
+
+
+// 49. Write a function to check even / odd
+function FunChk(FunNum) {
+    if (FunNum % 2 == 0) {
+        return ("This is a even Number:- " + FunNum)
+    }
+    else {
+        return ("This is a odd Number:- " + FunNum)
+    }
+}
+let ChkFun = FunChk(10)
+console.log(ChkFun)
+
+
+// 50. Write a function to find the sum of all numbers in an array
+function FunArray(array) {
+    let sum = 0;
+    for (let i of array) {
+        sum += i
+    }
+    return sum
+}
+let Fa = FunArray([1, 3, 345, 4, 5, 67, 4, 23])
+console.log("Array sum valu is:- " + Fa)
+
+
+// 51. Write a function to reverse a string
+function FunStr(srt) {
+    let rev = srt.split("").reverse().join("")
+    return rev
+}
+let st = FunStr("Munna")
+console.log("Using function to reversr the string:- " + st)
+
+
+// 52. Write a leap year check function
+function FunYear(year) {
+    if (year % 4 === 0 && year % 100 !== 0) {
+        return ("This is a leap Year :- " + year)
+    }
+    else if (year % 400 === 0) {
+        return ("This is a leap year :- " + year)
+    }
+    else {
+        return ("This is Not a leap year :- " + year)
+    }
+}
+let yea = FunYear(2030);
+console.log(yea)
+
+
+// 53. Write a function to find the largest number from an array
+function FunLar(array) {
+    let ar = array[0]
+    for (let r of array) {
+        if (r > ar) {
+            ar = r
+        }
+    }
+    return ar
+}
+let LarFun = [2, 2, 8, 4, 5, 4,]
+console.log("The largest Number :- " + FunLar(LarFun))
+
+
+// 54. Write a function to convert units(inch → feet)
+function FunFeet(inch) {
+    let feet = (inch / 12)
+    return feet
+}
+console.log("Inch to feet convert:- " + FunFeet(60))
+
+
+// 55. Create a calculator function (add, sub, mul, div)
+function addFun(a, b) {
+    return a + b
+}
+function subFun(a, b) {
+    return a - b
+}
+function mulFun(a, b) {
+    return a * b
+}
+function divFun(a, b) {
+    return a / b
+}
+
+function calculator(valu1, valu2, oprtation) {
+    let i = String(oprtation)
+    if (oprtation == "+") {
+        return "Two number sum:- " + addFun(valu1, valu2)
+    }
+    else if (oprtation == "-") {
+        return "Two number subtract:- " + subFun(valu1, valu2)
+    }
+    else if (oprtation == "*") {
+        return "Two number multiply:- " + mulFun(valu1, valu2)
+    }
+    else if (oprtation == "/") {
+        return "Two number divide:- " + divFun(valu1, valu2)
+    }
+}
+console.log(calculator(9, 3, "+"))
