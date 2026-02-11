@@ -553,3 +553,61 @@ function calculator(valu1, valu2, oprtation) {
     }
 }
 console.log(calculator(9, 3, "+"))
+
+
+// Bonus Challenges(56–60)
+
+
+// 56. Find the average of an array
+let AvgArray = [1, 3, 4, 5, 6, 8, 3, 9.9087948]
+let SumArray = 0
+for (let a of AvgArray) {
+    SumArray += a
+}
+let ArrayAvg = SumArray / AvgArray.length
+console.log(ArrayAvg.toFixed(3))
+
+
+// 57. Keep only unique values ​​from an array
+let UnikArray = [1, 2, 3, 2, 5, 5, 6, 7, 6]
+let UnikValue = [...new Set(UnikArray)];
+console.log("The unik valu is:- " + UnikValue)
+
+
+// 58. Access nested objects within objects
+let NesObj = {
+    name: 'Munna',
+    Roll: 64,
+    Address: {
+        city: "Rangpur",
+        Post: "Babukha",
+        PostCode: 5400,
+    },
+    Phone: 4383,
+    Voter: 1800,
+}
+console.log(NesObj.Address.PostCode)
+
+
+// 59. Use functions within functions
+function FunOut(Outside) {
+    function FunIn(Inside) {
+        sum = Outside * 2;
+        return sum;
+    }
+    return FunIn()
+}
+console.log(FunOut(5))
+
+
+// 60. Validate user input(check whether it is a number or not)
+function FunValti(Number) {
+    if (typeof Number === "number") {
+        return "This is a Number:- " + Number
+    }
+    else {
+        return "This is Not a Number:- " + Number
+    }
+}
+
+console.log(FunValti(34))
